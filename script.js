@@ -123,7 +123,6 @@ const faq = [
 ];
 
 const instagramPosts = [
-  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36.jpeg", text: "Camadas naturais para mesas sofisticadas." },
   { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (1).jpeg", text: "Flores, luz e ritmo visual em harmonia." },
   { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (2).jpeg", text: "Cerimônias com atmosfera orgânica e elegante." },
   { image: "images/WhatsApp Image 2026-08-03 at 20.46.58.jpeg", text: "Arranjos com assinatura e proporção impecável." }
