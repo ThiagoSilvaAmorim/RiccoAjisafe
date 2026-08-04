@@ -2,21 +2,21 @@ const siteConfig = {
   brand: "RICCO DECOR & PAISAGISMO",
   slogan: "Sofisticação em cada detalhe. ✨ Projetos de paisagismo, decoração de eventos e experiências exclusivas para quem valoriza beleza, elegância e personalidade. 🌿",
   whatsappNumber: "5511954774007",
-  email: "riccodecorepaisagismo@gmail.com",
+  email: "riccodecoroficial@gmail.com",
   phone: "+55 (11) 95477-4007",
-  location: "Rua Antônia Soreval, 140 · Aricanduva · São Paulo - SP",
-  addressLink: "https://maps.google.com/?q=Rua+Ant%C3%B4nia+Soreval,+140,+Aricanduva,+S%C3%A3o+Paulo+-+SP,+03407-100",
+  location: "Rua Antônia Soveral, 140, Tatuapé - São Paulo - SP - CEP 034071-100",
+  addressLink: "https://maps.google.com/?q=Rua+Ant%C3%B4nia+Soveral,+140,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+034071-100",
   instagram: "https://www.instagram.com/riccodecorepaisagismo",
   instagramHandle: "@riccodecorepaisagismo",
-  formEndpoint: "https://formsubmit.co/ajax/riccodecorepaisagismo@gmail.com",
+  formEndpoint: "https://formsubmit.co/ajax/riccodecoroficial@gmail.com",
   defaultMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de solicitar um orçamento de paisagismo ou decoração de evento.",
   visitMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de agendar uma visita técnica para meu evento."
 };
 
 const timeline = [
-  { year: "01", title: "Escuta e intenção", text: "Entendimento do evento, estilo, local, logística e atmosfera desejada." },
-  { year: "02", title: "Curadoria botânica", text: "Seleção de espécies, volumes, texturas e paleta natural para cada ambiente." },
-  { year: "03", title: "Execução premium", text: "Montagem cuidadosa, acompanhamento e entrega com acabamento impecável." }
+  { year: "1989", title: "Trajetória na Enflor", text: "Ricco Filho inicia sua jornada profissional participando da Enflor, consolidando conhecimentos em paisagismo e design floral premium." },
+  { year: "ABAF", title: "Membro Associado", text: "Certificado como membro ativo da ABAF (Associação Brasileira de Artistas Florais), reconhecimento de excelência técnica e criativa." },
+  { year: "Mestres", title: "Aprendizado com Referências", text: "Formado sob orientação de grandes mestres: Alfredo Tilli e Cornélia Cory Bakker. Sede dos estudos em Holambra, centro de excelência em paisagismo." }
 ];
 
 const services = [
@@ -32,48 +32,72 @@ const portfolio = [
   {
     title: "Casamento Boho Chic",
     category: "Casamento",
-    description: "Ambientação autêntica com folhagens, flores do campo e uma atmosfera leve, romântica e cheia de personalidade.",
-    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=82",
+    description: "Ambientação autêntica com folhagens naturais, flores brancas volumosas e atmosfera leve, romântica e cheia de personalidade.",
+    image: "images/IMG_8779.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
   },
   {
-    title: "Uma Noite nas Arábias",
-    category: "Evento social",
-    description: "Tema inspirado no oriente: iluminação dourada, tecidos, elementos botânicos e uma experiência sensorial marcante.",
-    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1400&q=82",
+    title: "Mesa de Recepção Premium",
+    category: "Evento corporativo",
+    description: "Composição elegante de mesas redondas com arranjos florais sofisticados em tons brancos, verdes e naturais.",
+    image: "images/IMG_8854.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
   },
   {
-    title: "Clube Carvão Eventos",
-    category: "Design floral ao ar livre",
-    description: "Buquês premium e design floral ao ar livre para uma celebração com luz natural, elegância e frescor.",
-    image: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=1400&q=82",
+    title: "Arranjo em Espelho d'Água",
+    category: "Design floral",
+    description: "Arranjo monumental em recipiente espelhado com flores brancas volumosas, folhagens verdes variadas e acabamento impecável.",
+    image: "images/IMG_8843.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
   },
   {
-    title: "Instalações Aéreas",
+    title: "Instalações Aéreas com Iluminação",
     category: "Ambientes fechados",
-    description: "Estruturas botânicas suspensas e ambientes fechados transformados em cenários imersivos e elegantes.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=82",
+    description: "Estruturas botânicas suspensas em teto com iluminação focal criam presença e impacto visual no ambiente.",
+    image: "images/IMG_8793.jpg",
     client: "Case real",
     local: "São Paulo - SP",
-    year: "2025"
+    year: "2026"
+  },
+  {
+    title: "Composição Floral Suspensa",
+    category: "Decoração sofisticada",
+    description: "Flores brancas em composição aérea com folhagens variadas e texturas, criando efeito visual de elegância e leveza.",
+    image: "images/IMG_8900.jpg",
+    client: "Case real",
+    local: "São Paulo - SP",
+    year: "2026"
+  },
+  {
+    title: "Parede Botânica Iluminada",
+    category: "Paisagismo premium",
+    description: "Jardim vertical com folhagens vibrantes em diversos tons de verde e iluminação ambiente que transforma o espaço.",
+    image: "images/IMG_8906.jpg",
+    client: "Case real",
+    local: "São Paulo - SP",
+    year: "2026"
   }
 ];
 
 const gallery = [
-  { title: "Mesa orgânica", image: "https://images.unsplash.com/photo-1523438097201-d4a25c1db3c4?auto=format&fit=crop&w=1400&q=82", alt: "Mesa posta com folhagens e arranjos sofisticados" },
-  { title: "Luz e folhagem", image: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=82", alt: "Detalhe de folhagens em evento com luz suave" },
-  { title: "Cerimônia natural", image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=82", alt: "Cerimônia de casamento ao ar livre" },
-  { title: "Texturas verdes", image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=82", alt: "Composição de plantas e texturas naturais" },
-  { title: "Entrada premium", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=82", alt: "Ambiente de evento com iluminação elegante" },
-  { title: "Arranjo autoral", image: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=1400&q=82", alt: "Arranjo floral sofisticado" }
+  { title: "Flores Brancas em Composição Aérea", image: "images/IMG_8920.jpg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
+  { title: "Detalhe de Arranjo Floral Branco", image: "images/IMG_8910.jpg", alt: "Close em arranjo floral com texturas verdes e flores brancas delicadas" },
+  { title: "Composição Tridimensional", image: "images/IMG_8911.jpg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
+  { title: "Mesa de Evento Elegante", image: "images/IMG_8944.jpg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
+  { title: "Buquê Premium em Cristal", image: "images/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
+  { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
+  { title: "Detalhe de Folhagens e Texturas", image: "images/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
+  { title: "Arranjo Minimalista Sofisticado", image: "images/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Buquê premium com proporção clássica e acabamento de alta qualidade" },
+  { title: "Floral Arrangement em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
+  { title: "Buquê Branco Volumoso", image: "images/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
+  { title: "Arranjo Floral Landscape", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
+  { title: "Arranjo Monumental Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" }
 ];
 
 const processSteps = [
@@ -85,24 +109,24 @@ const processSteps = [
 ];
 
 const testimonials = [
-  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80" },
-  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80" },
-  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" }
+  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "images/2a403c36-f77c-4ebb-93dc-a7b4988d6c0f.png" },
+  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "images/06de23a1-bbac-4cc6-997c-d9d914a9b8b1.png" },
+  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "images/2a403c36-f77c-4ebb-93dc-a7b4988d6c0f.png" }
 ];
 
 const faq = [
   { q: "Com quanto tempo de antecedência devo solicitar orçamento?", a: "Para eventos grandes, o ideal é iniciar a conversa com 60 a 120 dias de antecedência. Para produções menores, avaliamos a disponibilidade caso a caso." },
-  { q: "Vocês atendem apenas São Paulo?", a: "A base fica em São Paulo, Aricanduva, mas projetos em outras regiões podem ser avaliados conforme escopo, logística e agenda." },
+  { q: "Vocês atendem apenas São Paulo?", a: "A base fica em São Paulo, Tatuapé, mas projetos em outras regiões podem ser avaliados conforme escopo, logística e agenda." },
   { q: "O projeto é personalizado?", a: "Sim. Cada proposta considera local, arquitetura, luz, perfil dos convidados, estilo do evento e operação de montagem." },
   { q: "O formulário envia a mensagem automaticamente?", a: "O formulário valida os dados, prepara um atendimento personalizado e abre o WhatsApp com a mensagem pronta. Para envio por e-mail, usamos o FormSubmit — a primeira mensagem exige confirmar o e-mail uma única vez." },
   { q: "Vocês fazem buquês e design floral?", a: "Sim. Trabalhamos com buquês premium, arranjos e design floral para casamentos, eventos ao ar livre e ambientes fechados." }
 ];
 
 const instagramPosts = [
-  { image: gallery[0].image, text: "Camadas naturais para mesas de recepção." },
-  { image: gallery[1].image, text: "Folhagens, luz e ritmo visual." },
-  { image: gallery[2].image, text: "Cerimônias com atmosfera orgânica." },
-  { image: gallery[5].image, text: "Arranjos com assinatura e proporção." }
+  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36.jpeg", text: "Camadas naturais para mesas sofisticadas." },
+  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (1).jpeg", text: "Flores, luz e ritmo visual em harmonia." },
+  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (2).jpeg", text: "Cerimônias com atmosfera orgânica e elegante." },
+  { image: "images/WhatsApp Image 2026-08-03 at 20.46.58.jpeg", text: "Arranjos com assinatura e proporção impecável." }
 ];
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -273,7 +297,7 @@ function renderContact() {
     footer.innerHTML = `
       <li><a href="https://wa.me/${siteConfig.whatsappNumber}" target="_blank" rel="noopener">${siteConfig.phone}</a></li>
       <li><a href="mailto:${siteConfig.email}">${siteConfig.email}</a></li>
-      <li><a href="${siteConfig.addressLink}" target="_blank" rel="noopener">Aricanduva, São Paulo - SP</a></li>
+      <li><a href="${siteConfig.addressLink}" target="_blank" rel="noopener">Tatuapé, São Paulo - SP</a></li>
     `;
   }
 
@@ -584,6 +608,28 @@ function initPhoneMask() {
   });
 }
 
+function generateGoogleCalendarLink(data) {
+  const eventTitle = `Visita Técnica - ${data.eventType || "Evento"}`;
+  const eventDate = data.eventDate ? new Date(data.eventDate).toISOString().split('T')[0].replace(/-/g, '') : '';
+  const eventTime = "T100000Z";
+  const eventDuration = "PT2H";
+  const description = `Cliente: ${data.name}%0AEmail: ${data.email}%0ATelefone: ${data.phone}%0ADetalhes: ${data.message || "Sem detalhes adicionados"}`;
+
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: eventTitle,
+    dates: `${eventDate}${eventTime}/${eventDate.replace(/(\d{4})(\d{2})(\d{2})/, (m, a, b, c) => {
+      const d = new Date(a, b - 1, parseInt(c) + 1);
+      return d.toISOString().split('T')[0].replace(/-/g, '');
+    })}T100000Z`,
+    details: description,
+    location: 'São Paulo - SP',
+    trp: 'true'
+  });
+
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
+
 function initContactForm() {
   const form = qs("#contactForm");
   const status = qs("#formStatus");
@@ -617,15 +663,26 @@ function initContactForm() {
   };
 
   const updateWhatsapp = data => {
-    const message = `Olá, RICCO DECOR & PAISAGISMO! Meu nome é ${data.name || ""}. Gostaria de falar sobre ${data.eventType || "um evento"}${data.eventDate ? ` em ${data.eventDate}` : ""}. Telefone: ${data.phone || ""}. E-mail: ${data.email || ""}. Mensagem: ${data.message || ""}`;
-    if (whatsappLink) whatsappLink.href = buildWhatsappUrl(message);
+    const calendarLink = generateGoogleCalendarLink(data);
+    const message = `Olá, RICCO DECOR & PAISAGISMO! 🌿%0A%0AMeu nome é ${data.name || ""}. Gostaria de falar sobre ${data.eventType || "um evento"}${data.eventDate ? ` em ${data.eventDate}` : ""}.%0A%0AContato: ${data.phone || ""}%0AE-mail: ${data.email || ""}%0A%0A${data.message || "Aguardando seu retorno com a melhor proposta."}%0A%0A📅 Link para agendar: ${calendarLink}`;
+    if (whatsappLink) {
+      whatsappLink.href = buildWhatsappUrl(message);
+      whatsappLink.textContent = "Enviar e Agendar";
+    }
     const floatButton = qs("#whatsappFloat");
     if (floatButton) floatButton.href = buildWhatsappUrl(message);
   };
 
   const submitViaFormSubmit = async data => {
     const body = new FormData();
-    Object.entries({ ...data, _subject: `Novo contato pelo site - ${siteConfig.brand}` }).forEach(([key, value]) => body.append(key, value));
+    const calendarLink = generateGoogleCalendarLink(data);
+    const enrichedData = {
+      ...data,
+      _subject: `Nova proposta de agendamento - ${siteConfig.brand}`,
+      _cc: data.email,
+      googleCalendarLink: calendarLink
+    };
+    Object.entries(enrichedData).forEach(([key, value]) => body.append(key, value));
     try {
       await fetch(siteConfig.formEndpoint, { method: "POST", body, headers: { Accept: "application/json" } });
       return true;
@@ -652,9 +709,13 @@ function initContactForm() {
 
     submitViaFormSubmit(result.data);
     if (status) {
-      status.textContent = "Perfeito! Seu atendimento foi preparado. Envie pelo WhatsApp com um clique ou aguarde o retorno por e-mail.";
+      status.textContent = "✓ Atendimento preparado! Clique em 'Enviar e Agendar' para abrir o WhatsApp com link de agenda, ou aguarde nosso retorno por e-mail.";
+      status.style.color = "var(--gold-soft)";
     }
     form.reset();
+    setTimeout(() => {
+      if (status) status.textContent = "";
+    }, 6000);
   });
 
   if (whatsappLink) whatsappLink.href = buildWhatsappUrl(siteConfig.defaultMessage);

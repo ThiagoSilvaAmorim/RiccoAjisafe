@@ -66,7 +66,7 @@ const siteConfig = {
   whatsappNumber: "5511954774007",
   email: "riccodecorepaisagismo@gmail.com",
   phone: "+55 (11) 95477-4007",
-  location: "Rua Antônia Soreval, 140 · Aricanduva · São Paulo - SP",
+  location: "Rua Antônia Soveral, 140, Tatuapé - São Paulo - SP - CEP 034071-100",
   instagram: "https://www.instagram.com/riccodecorepaisagismo",
   formEndpoint: "https://formsubmit.co/ajax/riccodecorepaisagismo@gmail.com"
 };
@@ -185,7 +185,7 @@ Observação: na primeira vez, o FormSubmit envia um e-mail de confirmação par
 
 - **Favicon premium**: monograma dourado com folha e anel, alinhado à identidade.
 - **CTA "Agendar visita técnica"**: botão no hero e na seção de contato, abrindo o WhatsApp com mensagem pronta.
-- **Mapa no rodapé**: mapa da localização (Rua Antônia Soreval, 140) carregado com lazy loading.
+- **Mapa no rodapé**: mapa da localização (Rua Antônia Soveral, 140, Tatuapé - São Paulo - SP) carregado com lazy loading.
 - **Scrollspy**: o menu destaca a seção ativa enquanto o visitante rola a página.
 - **Voltar ao topo**: botão flutuante que aparece após rolar e leva ao topo suavemente.
 - **WhatsApp com pulso**: animação sutil de pulso no botão flutuante para chamar atenção.
