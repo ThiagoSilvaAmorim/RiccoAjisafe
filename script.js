@@ -109,9 +109,9 @@ const processSteps = [
 ];
 
 const testimonials = [
-  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "images/2a403c36-f77c-4ebb-93dc-a7b4988d6c0f.png" },
-  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "images/06de23a1-bbac-4cc6-997c-d9d914a9b8b1.png" },
-  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "images/2a403c36-f77c-4ebb-93dc-a7b4988d6c0f.png" }
+  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" },
+  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces" },
+  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces" }
 ];
 
 const faq = [
@@ -130,18 +130,18 @@ const instagramPosts = [
 ];
 
 const clients = [
-  { name: "MRV", class: "client-mrv" },
-  { name: "TECNISA", class: "client-tecnisa" },
-  { name: "Lollapalooza", class: "client-lollapalooza" },
-  { name: "Rock in Rio", class: "client-rockinrio" },
-  { name: "GRUPO HINOVA", class: "client-hinova" },
-  { name: "globo", class: "client-globo" },
-  { name: "IGUATEMI CAMPINAS", class: "client-iguatemi-campinas" },
-  { name: "PATIO HIGIENÓPOLIS", class: "client-patio" },
-  { name: "octarte", class: "client-octarte" },
-  { name: "IGUATEMI SÃO PAULO", class: "client-iguatemi-sp" },
-  { name: "Correios", class: "client-correios" },
-  { name: "COCO BAMBU", class: "client-coco-bambu" }
+  { name: "MRV", class: "client-mrv", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MRV_Engenharia_Logo.svg/400px-MRV_Engenharia_Logo.svg.png" },
+  { name: "TECNISA", class: "client-tecnisa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tecnisa_logo.svg/400px-Tecnisa_logo.svg.png" },
+  { name: "Lollapalooza", class: "client-lollapalooza", logo: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=180&h=80&fit=crop" },
+  { name: "Rock in Rio", class: "client-rockinrio", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Rock_in_Rio_logo.svg/400px-Rock_in_Rio_logo.svg.png" },
+  { name: "GRUPO HINOVA", class: "client-hinova", logo: "https://via.placeholder.com/180x80/004b87/ffffff?text=Grupo+Hinova" },
+  { name: "globo", class: "client-globo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Globo_logo.svg/400px-Globo_logo.svg.png" },
+  { name: "IGUATEMI", class: "client-iguatemi-campinas", logo: "https://via.placeholder.com/180x80/b8860b/ffffff?text=Iguatemi" },
+  { name: "PÁTIO", class: "client-patio", logo: "https://via.placeholder.com/180x80/4a4a4a/ffffff?text=P%C3%A1tio" },
+  { name: "octarte", class: "client-octarte", logo: "https://via.placeholder.com/180x80/2d5a3d/ffffff?text=octarte" },
+  { name: "IGUATEMI SP", class: "client-iguatemi-sp", logo: "https://via.placeholder.com/180x80/b8860b/ffffff?text=Iguatemi+SP" },
+  { name: "Correios", class: "client-correios", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Correios_do_Brasil.svg/400px-Correios_do_Brasil.svg.png" },
+  { name: "COCO BAMBU", class: "client-coco-bambu", logo: "https://via.placeholder.com/180x80/a0531b/ffffff?text=Coco+Bambu" }
 ];
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -298,7 +298,7 @@ function renderClients() {
   const doubledClients = [...clients, ...clients];
   target.innerHTML = doubledClients.map(client => `
     <div class="client-card ${client.class}">
-      <span>${client.name}</span>
+      <img src="${client.logo}" alt="${client.name}" loading="lazy" decoding="async">
     </div>
   `).join("");
 }
