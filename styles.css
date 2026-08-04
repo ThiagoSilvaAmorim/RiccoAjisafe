@@ -1085,6 +1085,154 @@ textarea.is-invalid {
   font-size: 0.92rem;
 }
 
+.clients {
+  background: var(--forest-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.clients__heading {
+  margin-bottom: 48px;
+}
+
+.clients-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #173d29 0%, #0f2818 100%);
+  padding: 48px 0;
+}
+
+.clients-track {
+  display: flex;
+  gap: 28px;
+  animation: scrollClients 40s linear infinite;
+  padding: 0 16px;
+}
+
+.clients-track:hover {
+  animation-play-state: paused;
+}
+
+.client-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 180px;
+  height: 80px;
+  padding: 16px 24px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.client-card span {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+/* Logos individuais com estilos de marca */
+.client-mrv span {
+  color: #0d6b3d;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.client-tecnisa span {
+  color: #cc1f1f;
+  font-family: Arial Black, sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.client-lollapalooza span {
+  color: #d62d6c;
+  font-family: Impact, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.client-rockinrio span {
+  color: #003da5;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.client-hinova span {
+  color: #004b87;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+.client-globo span {
+  color: #ff8c00;
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.client-iguatemi-campinas span {
+  color: #b8860b;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.client-patio span {
+  color: #4a4a4a;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.client-octarte span {
+  color: #2d5a3d;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.client-iguatemi-sp span {
+  color: #b8860b;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.client-correios span {
+  color: #003da5;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.client-coco-bambu span {
+  color: #a0531b;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180px * 12 - 28px * 12));
+  }
+}
+
 .site-footer {
   color: rgba(244, 244, 240, 0.72);
   background: var(--graphite);
@@ -1506,6 +1654,12 @@ textarea.is-invalid {
     padding: 64px 0;
   }
 
+  .container {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .nav-shell {
     min-height: 68px;
     padding-inline: 12px;
@@ -1590,6 +1744,35 @@ textarea.is-invalid {
     padding: 6px 10px;
     left: 8px;
     bottom: 8px;
+  }
+
+  .clients-carousel {
+    padding: 32px 0;
+  }
+
+  .clients-track {
+    gap: 16px;
+    padding: 0 12px;
+    animation: scrollClients 50s linear infinite;
+  }
+
+  .client-card {
+    min-width: 140px;
+    height: 70px;
+    padding: 12px 16px;
+  }
+
+  .client-card span {
+    font-size: 0.82rem;
+  }
+
+  @keyframes scrollClients {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-140px * 12 - 16px * 12));
+    }
   }
 }
 

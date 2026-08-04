@@ -129,6 +129,21 @@ const instagramPosts = [
   { image: "images/WhatsApp Image 2026-08-03 at 20.46.58.jpeg", text: "Arranjos com assinatura e proporção impecável." }
 ];
 
+const clients = [
+  { name: "MRV", class: "client-mrv" },
+  { name: "TECNISA", class: "client-tecnisa" },
+  { name: "Lollapalooza", class: "client-lollapalooza" },
+  { name: "Rock in Rio", class: "client-rockinrio" },
+  { name: "GRUPO HINOVA", class: "client-hinova" },
+  { name: "globo", class: "client-globo" },
+  { name: "IGUATEMI CAMPINAS", class: "client-iguatemi-campinas" },
+  { name: "PATIO HIGIENÓPOLIS", class: "client-patio" },
+  { name: "octarte", class: "client-octarte" },
+  { name: "IGUATEMI SÃO PAULO", class: "client-iguatemi-sp" },
+  { name: "Correios", class: "client-correios" },
+  { name: "COCO BAMBU", class: "client-coco-bambu" }
+];
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function qs(selector, scope = document) {
@@ -273,6 +288,18 @@ function renderInstagram() {
       <img src="${post.image}" alt="${post.text}" loading="lazy" decoding="async">
       <p>${post.text}</p>
     </article>
+  `).join("");
+}
+
+function renderClients() {
+  const target = qs("#clientsTrack");
+  if (!target) return;
+  // Duplicar os clientes para criar o efeito de loop infinito perfeito
+  const doubledClients = [...clients, ...clients];
+  target.innerHTML = doubledClients.map(client => `
+    <div class="client-card ${client.class}">
+      <span>${client.name}</span>
+    </div>
   `).join("");
 }
 
@@ -833,6 +860,7 @@ function boot() {
   renderTestimonials();
   renderFAQ();
   renderInstagram();
+  renderClients();
   renderContact();
   initLucideIcons();
   initLoader();
