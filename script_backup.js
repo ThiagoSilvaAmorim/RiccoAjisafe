@@ -109,9 +109,9 @@ const processSteps = [
 ];
 
 const testimonials = [
-  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "" },
-  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "" },
-  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "" }
+  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" },
+  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces" },
+  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces" }
 ];
 
 const faq = [
@@ -577,7 +577,11 @@ function initProjectModal() {
     qs("#projectModalCategory").textContent = project.category;
     qs("#projectModalTitle").textContent = project.title;
     qs("#projectModalDescription").textContent = project.description;
-    qs("#projectModalMeta").innerHTML = "";
+    qs("#projectModalMeta").innerHTML = [
+      ["Cliente", project.client],
+      ["Local", project.local],
+      ["Ano", project.year]
+    ].map(([term, value]) => `<div><dt>${term}</dt><dd>${value}</dd></div>`).join("");
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
