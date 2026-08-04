@@ -86,18 +86,19 @@ const portfolio = [
 ];
 
 const gallery = [
-  { title: "Flores Brancas em Composição Aérea", image: "images/IMG_8920.jpg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
-  { title: "Detalhe de Arranjo Floral Branco", image: "images/IMG_8910.jpg", alt: "Close em arranjo floral com texturas verdes e flores brancas delicadas" },
-  { title: "Composição Tridimensional", image: "images/IMG_8911.jpg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
-  { title: "Mesa de Evento Elegante", image: "images/IMG_8944.jpg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
+  { title: "Flores Brancas em Composição Aérea", image: "images/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
+  { title: "Detalhe de Arranjo Floral Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.11 (1).jpeg", alt: "Close em arranjo floral com texturas verdes e flores brancas delicadas" },
+  { title: "Composição Tridimensional", image: "images/WhatsApp Image 2026-08-03 at 20.43.11 (2).jpeg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
+  { title: "Mesa de Evento Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
   { title: "Buquê Premium em Cristal", image: "images/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
-  { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
+  { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.05 (1).jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
   { title: "Detalhe de Folhagens e Texturas", image: "images/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
-  { title: "Arranjo Minimalista Sofisticado", image: "images/IMG_8843.jpg", alt: "Buquê premium com proporção clássica e acabamento de alta qualidade" },
+  { title: "Folhagens em Detalhes Naturais", image: "images/WhatsApp Image 2026-08-03 at 20.43.06 (1).jpeg", alt: "Detalhe de folhagens variadas em composição natural sofisticada" },
   { title: "Floral Arrangement em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
   { title: "Buquê Branco Volumoso", image: "images/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
   { title: "Arranjo Floral Landscape", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
-  { title: "Arranjo Monumental Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" }
+  { title: "Arranjo Monumental Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" },
+  { title: "Detalhe de Buquê Sofisticado", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (2).jpeg", alt: "Composição floral com detalhe de flores brancas e folhagens verdes" }
 ];
 
 const processSteps = [
