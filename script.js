@@ -109,9 +109,9 @@ const processSteps = [
 ];
 
 const testimonials = [
-  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" },
-  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces" },
-  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces" }
+  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "" },
+  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "" },
+  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "" }
 ];
 
 const faq = [
@@ -132,7 +132,7 @@ const instagramPosts = [
 const clients = [
   { name: "MRV", class: "client-mrv", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MRV_Engenharia_Logo.svg/400px-MRV_Engenharia_Logo.svg.png" },
   { name: "TECNISA", class: "client-tecnisa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tecnisa_logo.svg/400px-Tecnisa_logo.svg.png" },
-  { name: "Lollapalooza", class: "client-lollapalooza", logo: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=180&h=80&fit=crop" },
+  { name: "Lollapalooza", class: "client-lollapalooza", logo: "https://via.placeholder.com/180x80/d62d6c/ffffff?text=Lollapalooza" },
   { name: "Rock in Rio", class: "client-rockinrio", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Rock_in_Rio_logo.svg/400px-Rock_in_Rio_logo.svg.png" },
   { name: "GRUPO HINOVA", class: "client-hinova", logo: "https://via.placeholder.com/180x80/004b87/ffffff?text=Grupo+Hinova" },
   { name: "globo", class: "client-globo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Globo_logo.svg/400px-Globo_logo.svg.png" },
@@ -246,20 +246,20 @@ function renderProcess() {
 }
 
 function renderTestimonials() {
-  const target = qs("#testimonialWrapper");
+  const target = qs(“#testimonialWrapper”);
   if (!target) return;
   target.innerHTML = testimonials.map(item => `
-    <article class="swiper-slide">
-      <div class="testimonial-card">
-        <div class="stars" aria-label="5 estrelas">${"★".repeat(5)}</div>
-        <p>“${item.text}”</p>
-        <div class="testimonial-author">
-          <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async">
+    <article class=”swiper-slide”>
+      <div class=”testimonial-card”>
+        <div class=”stars” aria-label=”5 estrelas”>${“★”.repeat(5)}</div>
+        <p>”${item.text}”</p>
+        <div class=”testimonial-author”>
+          ${item.image ? `<img src=”${item.image}” alt=”${item.name}” loading=”lazy” decoding=”async”>` : ''}
           <div><strong>${item.name}</strong><br><span>${item.role}</span></div>
         </div>
       </div>
     </article>
-  `).join("");
+  `).join(“”);
 }
 
 function renderFAQ() {
@@ -577,11 +577,7 @@ function initProjectModal() {
     qs("#projectModalCategory").textContent = project.category;
     qs("#projectModalTitle").textContent = project.title;
     qs("#projectModalDescription").textContent = project.description;
-    qs("#projectModalMeta").innerHTML = [
-      ["Cliente", project.client],
-      ["Local", project.local],
-      ["Ano", project.year]
-    ].map(([term, value]) => `<div><dt>${term}</dt><dd>${value}</dd></div>`).join("");
+    qs("#projectModalMeta").innerHTML = "";
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
