@@ -225,12 +225,10 @@ function renderGallery() {
   const target = qs("#galleryWrapper");
   if (!target) return;
   target.innerHTML = gallery.map((item, index) => `
-    <div class="swiper-slide">
-      <button class="gallery-card" type="button" data-gallery-index="${index}" aria-label="Abrir imagem: ${item.title}">
-        <img src="${item.image}" alt="${item.alt}" loading="lazy" decoding="async">
-        <span class="gallery-card__caption">${item.title}</span>
-      </button>
-    </div>
+    <button class="gallery-card" type="button" data-gallery-index="${index}" aria-label="Abrir imagem: ${item.title}">
+      <img src="${item.image}" alt="${item.alt}" loading="lazy" decoding="async">
+      <span class="gallery-card__caption">${item.title}</span>
+    </button>
   `).join("");
 }
 
@@ -463,22 +461,6 @@ function initSliders() {
     disableOnInteraction: false,
     pauseOnMouseEnter: true
   };
-
-  const gallerySwiper = new Swiper(".gallery-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    centeredSlides: true,
-    loop: true,
-    speed: 900,
-    grabCursor: true,
-    autoplay: prefersReducedMotion ? false : autoplayConfig,
-    pagination: { el: '[data-slider-pagination="gallery"]', clickable: true },
-    navigation: { nextEl: '[data-slider-next="gallery"]', prevEl: '[data-slider-prev="gallery"]' },
-    breakpoints: {
-      768: { slidesPerView: 1.6, spaceBetween: 22 },
-      1180: { slidesPerView: 2.2, spaceBetween: 28 }
-    }
-  });
 
   const portfolioSwiper = new Swiper(".portfolio-swiper", {
     slidesPerView: 1,
