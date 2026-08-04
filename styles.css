@@ -1339,6 +1339,7 @@ textarea.is-invalid {
   display: none;
   place-items: center;
   padding: 18px;
+  overflow: hidden;
 }
 
 .project-modal.is-open {
@@ -1357,7 +1358,7 @@ textarea.is-invalid {
   z-index: 2;
   width: min(920px, 100%);
   max-height: min(820px, 92svh);
-  overflow: auto;
+  overflow: hidden;
   padding: 24px;
   border: 1px solid rgba(197, 160, 89, 0.2);
   border-radius: var(--radius-xl);
