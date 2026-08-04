@@ -125,7 +125,16 @@ const faq = [
 const instagramPosts = [
   { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (1).jpeg", text: "Flores, luz e ritmo visual em harmonia." },
   { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (2).jpeg", text: "Cerimônias com atmosfera orgânica e elegante." },
-  { image: "images/WhatsApp Image 2026-08-03 at 20.46.58.jpeg", text: "Arranjos com assinatura e proporção impecável." }
+  { image: "images/IMG_8920.jpg", text: "Flores brancas em composição aérea sofisticada." },
+  { image: "images/IMG_8910.jpg", text: "Detalhe de arranjo floral com texturas verdes." },
+  { image: "images/IMG_8911.jpg", text: "Composição tridimensional em tons neutros." },
+  { image: "images/IMG_8944.jpg", text: "Mesa de evento com arranjo minimalista." },
+  { image: "images/IMG_8843.jpg", text: "Arranjo monumental em espelho d'água." },
+  { image: "images/IMG_8854.jpg", text: "Mesas redondas com arranjos sofisticados." },
+  { image: "images/IMG_8900.jpg", text: "Composição floral suspensa com elegância." },
+  { image: "images/IMG_8906.jpg", text: "Parede botânica iluminada com presença." },
+  { image: "images/IMG_8779.jpg", text: "Ambientação boho chic com folhagens naturais." },
+  { image: "images/IMG_8793.jpg", text: "Instalações aéreas com iluminação focal." }
 ];
 
 const clients = [
