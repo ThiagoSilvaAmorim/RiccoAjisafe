@@ -223,12 +223,12 @@ function renderPortfolio() {
 function renderGallery() {
   const target = qs("#galleryWrapper");
   if (!target) return;
-  target.innerHTML = gallery.map(item => `
+  target.innerHTML = gallery.map((item, index) => `
     <div class="swiper-slide">
-      <a class="gallery-card glightbox" href="${item.image}" data-gallery="ricco-gallery" data-title="${item.title}" aria-label="Abrir imagem: ${item.title}">
+      <button class="gallery-card" type="button" data-gallery-index="${index}" aria-label="Abrir imagem: ${item.title}">
         <img src="${item.image}" alt="${item.alt}" loading="lazy" decoding="async">
         <span class="gallery-card__caption">${item.title}</span>
-      </a>
+      </button>
     </div>
   `).join("");
 }
@@ -533,16 +533,7 @@ function initSliders() {
 }
 
 function initLightbox() {
-  if (window.GLightbox) {
-    GLightbox({
-      selector: ".glightbox",
-      touchNavigation: true,
-      loop: true,
-      zoomable: true,
-      keyboardNavigation: true,
-      descPosition: "bottom"
-    });
-  }
+  // Removido - usando modal padrão para galeria
 }
 
 function initFAQ() {
@@ -568,7 +559,7 @@ function initProjectModal() {
   const focusableSelector = "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])";
   let lastFocus = null;
 
-  const open = index => {
+  const openProject = index => {
     const project = portfolio[index];
     if (!project) return;
     lastFocus = document.activeElement;
@@ -584,6 +575,22 @@ function initProjectModal() {
     qs(".modal-close", modal)?.focus();
   };
 
+  const openGallery = index => {
+    const image = gallery[index];
+    if (!image) return;
+    lastFocus = document.activeElement;
+    qs("#projectModalImage").src = image.image;
+    qs("#projectModalImage").alt = image.alt;
+    qs("#projectModalCategory").textContent = "";
+    qs("#projectModalTitle").textContent = image.title;
+    qs("#projectModalDescription").textContent = "";
+    qs("#projectModalMeta").innerHTML = "";
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    qs(".modal-close", modal)?.focus();
+  };
+
   const close = () => {
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
@@ -592,8 +599,12 @@ function initProjectModal() {
   };
 
   document.addEventListener("click", event => {
-    const button = event.target.closest("[data-project-index]");
-    if (button) open(Number(button.dataset.projectIndex));
+    const projectButton = event.target.closest("[data-project-index]");
+    if (projectButton) openProject(Number(projectButton.dataset.projectIndex));
+
+    const galleryButton = event.target.closest("[data-gallery-index]");
+    if (galleryButton) openGallery(Number(galleryButton.dataset.galleryIndex));
+
     if (event.target.closest("[data-close-modal]")) close();
   });
 
