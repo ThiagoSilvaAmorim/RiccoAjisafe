@@ -93,7 +93,7 @@ const gallery = [
   { title: "Buquê Premium em Cristal", image: "images/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
   { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
   { title: "Detalhe de Folhagens e Texturas", image: "images/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
-  { title: "Arranjo Minimalista Sofisticado", image: "images/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Buquê premium com proporção clássica e acabamento de alta qualidade" },
+  { title: "Arranjo Minimalista Sofisticado", image: "images/IMG_8843.jpg", alt: "Buquê premium com proporção clássica e acabamento de alta qualidade" },
   { title: "Floral Arrangement em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
   { title: "Buquê Branco Volumoso", image: "images/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
   { title: "Arranjo Floral Landscape", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
