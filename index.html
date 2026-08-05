@@ -183,10 +183,15 @@
           <p>Carrossel automático de texturas, folhagens, luz e composição.</p>
         </div>
       </div>
-      <div class="gallery-grid reveal-item" id="galleryWrapper" aria-label="Galeria de fotos"></div>
+      <div class="gallery-swiper swiper reveal-item" aria-label="Galeria de fotos">
+        <div class="swiper-wrapper" id="galleryWrapper"></div>
+      </div>
       <div class="container">
-        <div class="gallery-controls" style="text-align: center; margin-top: 32px;">
+        <div class="swiper-controls gallery-controls" style="text-align: center; margin-top: 32px;">
+          <button class="swiper-nav-btn" type="button" aria-label="Foto anterior" data-slider-prev="gallery"><i data-lucide="arrow-left"></i></button>
+          <button class="autoplay-toggle" type="button" aria-label="Pausar carrossel" data-slider-toggle="gallery"><i data-lucide="pause"></i></button>
           <div class="swiper-pagination" data-slider-pagination="gallery"></div>
+          <button class="swiper-nav-btn" type="button" aria-label="Próxima foto" data-slider-next="gallery"><i data-lucide="arrow-right"></i></button>
         </div>
       </div>
     </section>

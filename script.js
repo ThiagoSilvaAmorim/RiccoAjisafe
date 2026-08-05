@@ -87,16 +87,15 @@ const portfolio = [
 
 const gallery = [
   { title: "Flores Brancas em Composição Aérea", image: "images/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
-  { title: "Detalhe de Arranjo Floral Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.11 (1).jpeg", alt: "Close em arranjo floral com texturas verdes e flores brancas delicadas" },
   { title: "Composição Tridimensional", image: "images/WhatsApp Image 2026-08-03 at 20.43.11 (2).jpeg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
   { title: "Mesa de Evento Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
   { title: "Buquê Premium em Cristal", image: "images/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
   { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.05 (1).jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
   { title: "Detalhe de Folhagens e Texturas", image: "images/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
   { title: "Folhagens em Detalhes Naturais", image: "images/WhatsApp Image 2026-08-03 at 20.43.06 (1).jpeg", alt: "Detalhe de folhagens variadas em composição natural sofisticada" },
-  { title: "Floral Arrangement em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
+  { title: "Arranjo Floral em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
   { title: "Buquê Branco Volumoso", image: "images/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
-  { title: "Arranjo Floral Landscape", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
+  { title: "Arranjo Floral Horizontal", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
   { title: "Arranjo Monumental Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" },
   { title: "Detalhe de Buquê Sofisticado", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (2).jpeg", alt: "Composição floral com detalhe de flores brancas e folhagens verdes" }
 ];
@@ -110,9 +109,9 @@ const processSteps = [
 ];
 
 const testimonials = [
-  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", image: "" },
-  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", image: "" },
-  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", image: "" }
+  { name: "Marina A.", role: "Noiva", text: "O paisagismo mudou completamente a energia do casamento. Tudo parecia natural, sofisticado e muito nosso.", initials: "MA" },
+  { name: "Clara M.", role: "Cerimonialista", text: "Equipe organizada, sensível ao briefing e extremamente cuidadosa com montagem e acabamento.", initials: "CM" },
+  { name: "Rafael P.", role: "Marketing corporativo", text: "A ambientação trouxe elegância ao nosso jantar de relacionamento sem competir com a identidade da marca.", initials: "RP" }
 ];
 
 const faq = [
@@ -131,18 +130,18 @@ const instagramPosts = [
 ];
 
 const clients = [
-  { name: "MRV", class: "client-mrv", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MRV_Engenharia_Logo.svg/400px-MRV_Engenharia_Logo.svg.png" },
-  { name: "TECNISA", class: "client-tecnisa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tecnisa_logo.svg/400px-Tecnisa_logo.svg.png" },
-  { name: "Lollapalooza", class: "client-lollapalooza", logo: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=180&h=80&fit=crop" },
-  { name: "Rock in Rio", class: "client-rockinrio", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Rock_in_Rio_logo.svg/400px-Rock_in_Rio_logo.svg.png" },
-  { name: "GRUPO HINOVA", class: "client-hinova", logo: "https://via.placeholder.com/180x80/004b87/ffffff?text=Grupo+Hinova" },
-  { name: "globo", class: "client-globo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Globo_logo.svg/400px-Globo_logo.svg.png" },
-  { name: "IGUATEMI", class: "client-iguatemi-campinas", logo: "https://via.placeholder.com/180x80/b8860b/ffffff?text=Iguatemi" },
-  { name: "PÁTIO", class: "client-patio", logo: "https://via.placeholder.com/180x80/4a4a4a/ffffff?text=P%C3%A1tio" },
-  { name: "octarte", class: "client-octarte", logo: "https://via.placeholder.com/180x80/2d5a3d/ffffff?text=octarte" },
-  { name: "IGUATEMI SP", class: "client-iguatemi-sp", logo: "https://via.placeholder.com/180x80/b8860b/ffffff?text=Iguatemi+SP" },
-  { name: "Correios", class: "client-correios", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Correios_do_Brasil.svg/400px-Correios_do_Brasil.svg.png" },
-  { name: "COCO BAMBU", class: "client-coco-bambu", logo: "https://via.placeholder.com/180x80/a0531b/ffffff?text=Coco+Bambu" }
+  { name: "MRV", class: "client-mrv", logo: "images/logos/mrv.png" },
+  { name: "TECNISA", class: "client-tecnisa", logo: "images/logos/tecnisa.jpg" },
+  { name: "Lollapalooza Brasil", class: "client-lollapalooza", logo: "images/logos/lollapalooza.png" },
+  { name: "Rock in Rio", class: "client-rockinrio", logo: "" },
+  { name: "Grupo Hinova", class: "client-hinova", logo: "" },
+  { name: "Globo", class: "client-globo", logo: "images/logos/globo.png" },
+  { name: "Iguatemi Campinas", class: "client-iguatemi-campinas", logo: "images/logos/iguatemi-campinas.png" },
+  { name: "Pátio Higienópolis", class: "client-patio", logo: "" },
+  { name: "Octarte", class: "client-octarte", logo: "" },
+  { name: "Iguatemi São Paulo", class: "client-iguatemi-sp", logo: "images/logos/iguatemi-sp.png" },
+  { name: "Correios", class: "client-correios", logo: "images/logos/correios.png" },
+  { name: "Coco Bambu", class: "client-coco-bambu", logo: "images/logos/cocobambu.png" }
 ];
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -225,10 +224,12 @@ function renderGallery() {
   const target = qs("#galleryWrapper");
   if (!target) return;
   target.innerHTML = gallery.map((item, index) => `
-    <button class="gallery-card" type="button" data-gallery-index="${index}" aria-label="Abrir imagem: ${item.title}">
-      <img src="${item.image}" alt="${item.alt}" loading="lazy" decoding="async">
-      <span class="gallery-card__caption">${item.title}</span>
-    </button>
+    <div class="swiper-slide">
+      <button class="gallery-card" type="button" data-gallery-index="${index}" aria-label="Abrir imagem: ${item.title}">
+        <img src="${item.image}" alt="${item.alt}" loading="lazy" decoding="async">
+        <span class="gallery-card__caption">${item.title}</span>
+      </button>
+    </div>
   `).join("");
 }
 
@@ -253,7 +254,7 @@ function renderTestimonials() {
         <div class="stars" aria-label="5 estrelas">${"★".repeat(5)}</div>
         <p>“${item.text}”</p>
         <div class="testimonial-author">
-          <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async">
+          <div class="testimonial-avatar" aria-hidden="true">${item.initials}</div>
           <div><strong>${item.name}</strong><br><span>${item.role}</span></div>
         </div>
       </div>
@@ -295,11 +296,15 @@ function renderClients() {
   if (!target) return;
   // Duplicar os clientes para criar o efeito de loop infinito perfeito
   const doubledClients = [...clients, ...clients];
-  target.innerHTML = doubledClients.map(client => `
-    <div class="client-card ${client.class}">
-      <img src="${client.logo}" alt="${client.name}" loading="lazy" decoding="async">
-    </div>
-  `).join("");
+  target.innerHTML = doubledClients.map(client => {
+    // Sem logo local: exibe o nome da marca com tipografia elegante.
+    // Com logo: mantém o nome oculto como reserva e mostra o logo.
+    const fallback = `<span class="client-card__fallback"${client.logo ? ' style="display:none"' : ""}>${client.name}</span>`;
+    const logo = client.logo
+      ? `<img src="${client.logo}" alt="${client.name}" loading="lazy" decoding="async" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid'">`
+      : "";
+    return `<div class="client-card ${client.class}">${fallback}${logo}</div>`;
+  }).join("");
 }
 
 function renderContact() {
@@ -462,6 +467,22 @@ function initSliders() {
     pauseOnMouseEnter: true
   };
 
+  const gallerySwiper = new Swiper(".gallery-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    centeredSlides: true,
+    loop: true,
+    speed: 900,
+    grabCursor: true,
+    autoplay: prefersReducedMotion ? false : autoplayConfig,
+    pagination: { el: '[data-slider-pagination="gallery"]', clickable: true },
+    navigation: { nextEl: '[data-slider-next="gallery"]', prevEl: '[data-slider-prev="gallery"]' },
+    breakpoints: {
+      768: { slidesPerView: 1.6, spaceBetween: 22 },
+      1180: { slidesPerView: 2.2, spaceBetween: 28 }
+    }
+  });
+
   const portfolioSwiper = new Swiper(".portfolio-swiper", {
     slidesPerView: 1,
     spaceBetween: 16,
@@ -553,6 +574,7 @@ function initProjectModal() {
     qs("#projectModalDescription").textContent = project.description;
     qs("#projectModalMeta").innerHTML = "";
     modal.classList.add("is-open");
+    modal.classList.remove("is-gallery");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
     qs(".modal-close", modal)?.focus();
@@ -568,14 +590,14 @@ function initProjectModal() {
     qs("#projectModalTitle").textContent = image.title;
     qs("#projectModalDescription").textContent = "";
     qs("#projectModalMeta").innerHTML = "";
-    modal.classList.add("is-open");
+    modal.classList.add("is-open", "is-gallery");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
     qs(".modal-close", modal)?.focus();
   };
 
   const close = () => {
-    modal.classList.remove("is-open");
+    modal.classList.remove("is-open", "is-gallery");
     modal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("modal-open");
     if (lastFocus) lastFocus.focus();
