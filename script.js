@@ -1,5 +1,6 @@
 const siteConfig = {
-  brand: "RICCO DECOR & PAISAGISMO",
+  brand: "RICCO DECOR",
+  subtitle: "Paisagismo & Ateliê",
   slogan: "Sofisticação em cada detalhe. ✨ Projetos de paisagismo, decoração de eventos e experiências exclusivas para quem valoriza beleza, elegância e personalidade. 🌿",
   whatsappNumber: "5511954774007",
   email: "riccodecoroficial@gmail.com",
@@ -9,8 +10,11 @@ const siteConfig = {
   instagram: "https://www.instagram.com/riccodecoroficial",
   instagramHandle: "@riccodecoroficial",
   formEndpoint: "https://formsubmit.co/ajax/riccodecoroficial@gmail.com",
-  defaultMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de solicitar um orçamento de paisagismo ou decoração de evento.",
-  visitMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de agendar uma visita técnica para meu evento."
+  defaultMessage: "Olá, RICCO DECOR! Gostaria de solicitar um orçamento de paisagismo ou decoração de evento.",
+  visitMessage: "Olá, RICCO DECOR! Gostaria de agendar uma visita técnica para meu evento.",
+  // Instagram Widget Config: Para feed automático, crie conta em elf sight .com / lightwidget .com / snapwidget .com
+  // Cole o embed code aqui (ex: '<div class="elfsight-app-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" data-elfsight-app-lazy></div>')
+  instagramWidgetEmbed: ""
 };
 
 const timeline = [
@@ -60,7 +64,7 @@ const portfolio = [
     title: "Instalações Aéreas com Iluminação",
     category: "Ambientes fechados",
     description: "Estruturas botânicas suspensas em teto com iluminação focal criam presença e impacto visual no ambiente.",
-    image: "images/IMG_8793.jpg",
+    image: "images/galeria/Galeria de Ambientação/IMG_8911.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
@@ -289,7 +293,19 @@ function renderFAQ() {
 }
 
 function renderInstagram() {
+  const widgetWrap = qs("#instagramWidget");
+  const trackWrap = qs("#instagramTrackWrap");
   const target = qs("#instagramTrack");
+  
+  // Se widget automático configurado, usa ele e esconde o carrossel manual
+  if (siteConfig.instagramWidgetEmbed && widgetWrap) {
+    widgetWrap.innerHTML = siteConfig.instagramWidgetEmbed;
+    if (trackWrap) trackWrap.style.display = "none";
+    return;
+  }
+  
+  // Fallback: carrossel manual
+  if (widgetWrap) widgetWrap.style.display = "none";
   if (!target) return;
   const doubled = [...instagramPosts, ...instagramPosts];
   target.innerHTML = doubled.map(post => `
@@ -712,7 +728,7 @@ function initContactForm() {
 
   const updateWhatsapp = data => {
     const calendarLink = generateGoogleCalendarLink(data);
-    const message = `Olá, RICCO DECOR & PAISAGISMO! 🌿%0A%0AMeu nome é ${data.name || ""}. Gostaria de falar sobre ${data.eventType || "um evento"}${data.eventDate ? ` em ${data.eventDate}` : ""}.%0A%0AContato: ${data.phone || ""}%0AE-mail: ${data.email || ""}%0A%0A${data.message || "Aguardando seu retorno com a melhor proposta."}%0A%0A📅 Link para agendar: ${calendarLink}`;
+    const message = `Olá, ${siteConfig.brand} ${siteConfig.subtitle}! 🌿%0A%0AMeu nome é ${data.name || ""}. Gostaria de falar sobre ${data.eventType || "um evento"}${data.eventDate ? ` em ${data.eventDate}` : ""}.%0A%0AContato: ${data.phone || ""}%0AE-mail: ${data.email || ""}%0A%0A${data.message || "Aguardando seu retorno com a melhor proposta."}%0A%0A📅 Link para agendar: ${calendarLink}`;
     if (whatsappLink) {
       whatsappLink.href = buildWhatsappUrl(message);
       whatsappLink.textContent = "Enviar e Agendar";
@@ -757,7 +773,7 @@ function initContactForm() {
 
     submitViaFormSubmit(result.data);
     if (status) {
-      status.textContent = "✓ Atendimento preparado! Clique em 'Enviar e Agendar' para abrir o WhatsApp com link de agenda, ou aguarde nosso retorno por e-mail.";
+      status.innerHTML = "✓ Atendimento preparado! Clique em 'Enviar e Agendar' para abrir o WhatsApp com link de agenda, ou aguarde nosso retorno por e-mail.<br><small style='opacity:0.7'>⚠️ <strong>Primeiro uso:</strong> verifique o e-mail riccodecoroficial@gmail.com e clique no link de confirmação do FormSubmit para ativar o recebimento automático.</small>";
       status.style.color = "var(--gold-soft)";
     }
     form.reset();
