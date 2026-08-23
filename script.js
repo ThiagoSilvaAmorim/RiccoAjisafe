@@ -181,37 +181,13 @@ function initLoader() {
   const closeLoader = () => {
     if (window.gsap && !prefersReducedMotion) {
       gsap.to(loader, { opacity: 0, duration: 0.7, ease: "power3.out", onComplete: () => loader.remove() });
-      gsap.from(".hero-luxo .reveal-up", { y: 40, opacity: 0, duration: 1, stagger: 0.1, ease: "power3.out", delay: 0.2 });
-      initHeroCounters();
+      gsap.from(".hero .reveal-item", { y: 34, opacity: 0, duration: 0.9, stagger: 0.12, ease: "power3.out", delay: 0.2 });
     } else {
       loader.remove();
-      initHeroCounters();
     }
   };
 
   window.setTimeout(closeLoader, 850);
-}
-
-function initHeroCounters() {
-  const counters = document.querySelectorAll("[data-counter]");
-  if (!counters.length || prefersReducedMotion) {
-    counters.forEach(el => el.textContent = el.dataset.counter);
-    return;
-  }
-  counters.forEach(counter => {
-    const target = +counter.dataset.counter;
-    const duration = 1.8;
-    const start = 0;
-    const step = (ts) => {
-      const progress = Math.min((ts - counter._start) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      counter.textContent = Math.floor(eased * target);
-      if (progress < 1) requestAnimationFrame(step);
-      else counter.textContent = target;
-    };
-    counter._start = performance.now();
-    requestAnimationFrame(step);
-  });
 }
 
 function renderTimeline() {
@@ -856,10 +832,10 @@ function initAnimations() {
     });
   });
 
-  gsap.to(".floral-slide", {
+  gsap.to(".hero__media img", {
     yPercent: 12,
     ease: "none",
-    scrollTrigger: { trigger: ".hero-luxo", start: "top top", end: "bottom top", scrub: true }
+    scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true }
   });
 }
 
