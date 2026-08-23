@@ -832,7 +832,7 @@ function initAnimations() {
     });
   });
 
-  gsap.to(".hero__media img", {
+  gsap.to(".hero__media video, .hero__media img", {
     yPercent: 12,
     ease: "none",
     scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true }
