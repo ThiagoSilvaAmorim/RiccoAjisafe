@@ -181,7 +181,7 @@ function initLoader() {
   const closeLoader = () => {
     if (window.gsap && !prefersReducedMotion) {
       gsap.to(loader, { opacity: 0, duration: 0.7, ease: "power3.out", onComplete: () => loader.remove() });
-      gsap.from(".hero .reveal-item", { y: 34, opacity: 0, duration: 0.9, stagger: 0.12, ease: "power3.out", delay: 0.2 });
+      // Hero usa animações CSS (reveal-up) - não precisa GSAP aqui
     } else {
       loader.remove();
     }
