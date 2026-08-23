@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Foto 1 do álbum Buquês">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e4e35"/>
+      <stop offset="0.6" stop-color="#153926"/>
+      <stop offset="1" stop-color="#0a2116"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx="0.5" cy="0.48" r="0.6">
+      <stop offset="0" stop-color="#C5B358" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#C5B358" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#brilho)"/>
+  <g fill="none" stroke="#C5B358" stroke-width="2.5">
+    <circle cx="280" cy="300" r="110" opacity="0.8"/>
+    <circle cx="280" cy="300" r="185" opacity="0.45"/>
+    <circle cx="280" cy="300" r="260" opacity="0.24"/>
+  </g>
+  <circle cx="280" cy="300" r="8" fill="#C5B358" opacity="0.85"/>
+</svg>

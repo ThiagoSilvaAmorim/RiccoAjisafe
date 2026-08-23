@@ -64,11 +64,11 @@ const siteConfig = {
   brand: "RICCO DECOR & PAISAGISMO",
   slogan: "Sofisticação em cada detalhe. ✨ ...",
   whatsappNumber: "5511954774007",
-  email: "riccodecorepaisagismo@gmail.com",
+  email: "riccodecoroficial@gmail.com",
   phone: "+55 (11) 95477-4007",
   location: "Rua Antônia Soveral, 140, Tatuapé - São Paulo - SP - CEP 034071-100",
-  instagram: "https://www.instagram.com/riccodecorepaisagismo",
-  formEndpoint: "https://formsubmit.co/ajax/riccodecorepaisagismo@gmail.com"
+  instagram: "https://www.instagram.com/riccodecoroficial",
+  formEndpoint: "https://formsubmit.co/ajax/riccodecoroficial@gmail.com"
 };
 ```
 

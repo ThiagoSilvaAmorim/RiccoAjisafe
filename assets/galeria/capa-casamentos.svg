@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" role="img" aria-label="Capa do álbum Casamentos">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#245338"/>
+      <stop offset="0.55" stop-color="#173d29"/>
+      <stop offset="1" stop-color="#0c2418"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#C5B358" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C5B358" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <rect width="600" height="800" fill="url(#brilho)"/>
+  <g fill="none" stroke="#C5B358" stroke-width="3">
+    <circle cx="300" cy="355" r="92" opacity="0.85"/>
+    <circle cx="300" cy="355" r="152" opacity="0.5"/>
+    <circle cx="300" cy="355" r="212" opacity="0.28"/>
+  </g>
+  <circle cx="300" cy="355" r="9" fill="#C5B358" opacity="0.9"/>
+</svg>

@@ -6,8 +6,8 @@ const siteConfig = {
   phone: "+55 (11) 95477-4007",
   location: "Rua Antônia Soveral, 140, Tatuapé - São Paulo - SP - CEP 034071-100",
   addressLink: "https://maps.google.com/?q=Rua+Ant%C3%B4nia+Soveral,+140,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+034071-100",
-  instagram: "https://www.instagram.com/riccodecorepaisagismo",
-  instagramHandle: "@riccodecorepaisagismo",
+  instagram: "https://www.instagram.com/riccodecoroficial",
+  instagramHandle: "@riccodecoroficial",
   formEndpoint: "https://formsubmit.co/ajax/riccodecoroficial@gmail.com",
   defaultMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de solicitar um orçamento de paisagismo ou decoração de evento.",
   visitMessage: "Olá, RICCO DECOR & PAISAGISMO! Gostaria de agendar uma visita técnica para meu evento."
@@ -30,7 +30,7 @@ const services = [
 
 const portfolio = [
   {
-    title: "Casamento Boho Chic",
+    title: "Ambientação Boho Chic",
     category: "Casamento",
     description: "Ambientação autêntica com folhagens naturais, flores brancas volumosas e atmosfera leve, romântica e cheia de personalidade.",
     image: "images/IMG_8779.jpg",
@@ -42,7 +42,7 @@ const portfolio = [
     title: "Mesa de Recepção Premium",
     category: "Evento corporativo",
     description: "Composição elegante de mesas redondas com arranjos florais sofisticados em tons brancos, verdes e naturais.",
-    image: "images/IMG_8854.jpg",
+    image: "images/galeria/Galeria de Ambientação/IMG_8854.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
@@ -51,7 +51,7 @@ const portfolio = [
     title: "Arranjo em Espelho d'Água",
     category: "Design floral",
     description: "Arranjo monumental em recipiente espelhado com flores brancas volumosas, folhagens verdes variadas e acabamento impecável.",
-    image: "images/IMG_8843.jpg",
+    image: "images/galeria/Galeria de Ambientação/IMG_8843.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
@@ -69,7 +69,7 @@ const portfolio = [
     title: "Composição Floral Suspensa",
     category: "Decoração sofisticada",
     description: "Flores brancas em composição aérea com folhagens variadas e texturas, criando efeito visual de elegância e leveza.",
-    image: "images/IMG_8900.jpg",
+    image: "images/galeria/Galeria de Ambientação/IMG_8900.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
@@ -78,7 +78,7 @@ const portfolio = [
     title: "Parede Botânica Iluminada",
     category: "Paisagismo premium",
     description: "Jardim vertical com folhagens vibrantes em diversos tons de verde e iluminação ambiente que transforma o espaço.",
-    image: "images/IMG_8906.jpg",
+    image: "images/galeria/Galeria de Ambientação/IMG_8906.jpg",
     client: "Case real",
     local: "São Paulo - SP",
     year: "2026"
@@ -86,18 +86,18 @@ const portfolio = [
 ];
 
 const gallery = [
-  { title: "Flores Brancas em Composição Aérea", image: "images/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
-  { title: "Composição Tridimensional", image: "images/WhatsApp Image 2026-08-03 at 20.43.11 (2).jpeg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
-  { title: "Mesa de Evento Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
-  { title: "Buquê Premium em Cristal", image: "images/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
-  { title: "Arranjo em Vaso Branco Elegante", image: "images/WhatsApp Image 2026-08-03 at 20.43.05 (1).jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
-  { title: "Detalhe de Folhagens e Texturas", image: "images/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
-  { title: "Folhagens em Detalhes Naturais", image: "images/WhatsApp Image 2026-08-03 at 20.43.06 (1).jpeg", alt: "Detalhe de folhagens variadas em composição natural sofisticada" },
-  { title: "Arranjo Floral em Profundidade", image: "images/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
-  { title: "Buquê Branco Volumoso", image: "images/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
-  { title: "Arranjo Floral Horizontal", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
-  { title: "Arranjo Monumental Branco", image: "images/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" },
-  { title: "Detalhe de Buquê Sofisticado", image: "images/WhatsApp Image 2026-08-03 at 20.43.04 (2).jpeg", alt: "Composição floral com detalhe de flores brancas e folhagens verdes" }
+  { title: "Ambientação 11", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.11.jpeg", alt: "Arranjo suspenso com flores brancas volumosas em ambientação sofisticada" },
+  { title: "Ambientação 23", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.11 (2).jpeg", alt: "Arranjo em múltiplas dimensões com folhagens e flores em tons neutros elegantes" },
+  { title: "Ambientação 25", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.12.jpeg", alt: "Detalhe de mesa posta com arranjo floral minimalista e sofisticado" },
+  { title: "Ambientação 18", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.05.jpeg", alt: "Arranjo floral em vaso cristal com composição sofisticada e proporção" },
+  { title: "Ambientação 17", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.05 (1).jpeg", alt: "Composição floral branca e verde em vaso cerâmica com acabamento impecável" },
+  { title: "Ambientação 20", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.06.jpeg", alt: "Texturas de folhagens verdes e flores brancas em composição natural equilibrada" },
+  { title: "Ambientação 19", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.06 (1).jpeg", alt: "Detalhe de folhagens variadas em composição natural sofisticada" },
+  { title: "Ambientação 21", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.08.jpeg", alt: "Arranjo floral com profundidade e movimento visual em tons naturais" },
+  { title: "Ambientação 16", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", alt: "Arranjo com flores brancas e folhagens verdes em composição elegante" },
+  { title: "Ambientação 14", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.04 (1).jpeg", alt: "Composição floral horizontal com arranjo de flores e plantas em perspectiva" },
+  { title: "Ambientação 26", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.18.jpeg", alt: "Grande arranjo floral com volume e presença em tons brancos e verdes" },
+  { title: "Ambientação 15", image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.04 (2).jpeg", alt: "Composição floral com detalhe de flores brancas e folhagens verdes" }
 ];
 
 const processSteps = [
@@ -123,10 +123,18 @@ const faq = [
 ];
 
 const instagramPosts = [
-  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (1).jpeg", text: "Flores, luz e ritmo visual em harmonia." },
-  { image: "images/WhatsApp Image 2026-08-03 at 20.24.36 (2).jpeg", text: "Cerimônias com atmosfera orgânica e elegante." },
-  { image: "images/IMG_8843.jpg", text: "Arranjo monumental em espelho d'água." },
-  { image: "images/IMG_8906.jpg", text: "Parede botânica iluminada com presença." }
+  { image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.24.36 (1).jpeg", text: "Flores, luz e ritmo visual em harmonia." },
+  { image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.24.36 (2).jpeg", text: "Cerimônias com atmosfera orgânica e elegante." },
+  { image: "images/galeria/Galeria de Ambientação/IMG_8843.jpg", text: "Arranjo monumental em espelho d'água." },
+  { image: "images/galeria/Galeria de Ambientação/IMG_8906.jpg", text: "Parede botânica iluminada com presença." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.20 (1).jpeg", text: "Mesa posta com detalhes que encantam." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.22.jpeg", text: "Composição natural e sofisticada." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.25.jpeg", text: "Arranjos florais com textura e profundidade." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.33.jpeg", text: "Detalhes que transformam o ambiente." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.40 (2).jpeg", text: "Elegância em cada composição." },
+  { image: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.45.jpeg", text: "Inspiração para eventos inesquecíveis." },
+  { image: "images/galeria/Galeria de Ambientação/IMG_8944.jpg", text: "Ambientações que contam histórias." },
+  { image: "images/galeria/Galeria de Ambientação/WhatsApp Image 2026-08-03 at 20.43.04.jpeg", text: "Beleza natural em cada detalhe." }
 ];
 
 const clients = [
@@ -281,13 +289,14 @@ function renderFAQ() {
 }
 
 function renderInstagram() {
-  const target = qs("#instagramGrid");
+  const target = qs("#instagramTrack");
   if (!target) return;
-  target.innerHTML = instagramPosts.map(post => `
-    <article class="instagram-card reveal-item">
+  const doubled = [...instagramPosts, ...instagramPosts];
+  target.innerHTML = doubled.map(post => `
+    <a class="instagram-card" href="https://www.instagram.com/riccodecoroficial" target="_blank" rel="noopener">
       <img src="${post.image}" alt="${post.text}" loading="lazy" decoding="async">
       <p>${post.text}</p>
-    </article>
+    </a>
   `).join("");
 }
 
