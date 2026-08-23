@@ -484,14 +484,14 @@ p {
   object-position: center;
 }
 
-/* Overlay Verde Institucional Ricco - Elegante e Iluminado */
+/* Overlay Verde Institucional Ricco - Elegante, Iluminado, Diurno */
 .hero__overlay {
   background:
-    linear-gradient(180deg, 
-      rgba(15, 35, 25, 0.55) 0%, 
-      rgba(15, 35, 25, 0.35) 30%, 
-      rgba(15, 35, 25, 0.25) 55%, 
-      rgba(15, 35, 25, 0.45) 100%
+    linear-gradient(135deg, 
+      rgba(15, 35, 25, 0.65) 0%, 
+      rgba(15, 35, 25, 0.4) 35%, 
+      rgba(20, 20, 20, 0.3) 65%, 
+      rgba(15, 35, 25, 0.5) 100%
     );
 }
 
