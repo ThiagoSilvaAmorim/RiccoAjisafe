@@ -17,7 +17,7 @@
     titulo: "Galeria de Ambientação",
     descricao: "Composições, detalhes e ambientações dos eventos.",
     icone: "evento",
-    capa: "images/galeria/Galeria de Ambientação/IMG_8944.jpg",
+    capa: "images/galeria/Capas/Galeria de Ambientação.jpeg",
     subfotos: [
       {
         id: "galeria-de-ambientacao-1",
@@ -156,7 +156,7 @@
     titulo: "Debutante",
     descricao: "Momentos e detalhes de festas de debutante.",
     icone: "pessoas",
-    capa: "images/galeria/debutante/WhatsApp Image 2026-08-12 at 21.20.59.jpeg",
+    capa: "images/galeria/Capas/Debutante.jpeg",
     subfotos: [
       {
         id: "debutante-1",
@@ -190,7 +190,7 @@
     titulo: "Viviane & Thiago",
     descricao: "Álbum do casamento de Viviane & Thiago.",
     icone: "pessoas",
-    capa: "images/galeria/Viviane & Thiago/WhatsApp Image 2026-08-12 at 21.21.15.jpeg",
+    capa: "images/galeria/Capas/Viviane & Thiago.jpeg",
     subfotos: [
       {
         id: "viviane-thiago-1",
@@ -364,7 +364,7 @@
     titulo: "Nayara & Roger",
     descricao: "Álbum do casamento de Nayara & Roger.",
     icone: "pessoas",
-    capa: "images/galeria/Nayara & Roger/WhatsApp Image 2026-08-12 at 21.30.19 (2).jpeg",
+    capa: "images/galeria/Capas/Nayara & Roger.jpeg",
     subfotos: [
       {
         id: "nayara-roger-1",
@@ -448,7 +448,7 @@
     titulo: "Pricila e Thiago",
     descricao: "Álbum do casamento de Pricila e Thiago.",
     icone: "pessoas",
-    capa: "images/galeria/Pricila e Thiago/WhatsApp Image 2026-08-12 at 21.30.13.jpeg",
+    capa: "images/galeria/Capas/Pricila & Thiago.jpeg",
     subfotos: [
       {
         id: "pricila-thiago-1",
@@ -527,7 +527,7 @@
     titulo: "Mesas & Arranjos",
     descricao: "Mesas decoradas, arranjos florais e detalhes de composição.",
     icone: "evento",
-    capa: "images/galeria/Mesas & Arranjos/WhatsApp Image 2026-08-12 at 21.30.49.jpeg",
+    capa: "images/galeria/Capas/Mesas & Arranjos.jpeg",
     subfotos: [
       {
         id: "mesas-arranjos-1",
